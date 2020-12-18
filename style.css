@@ -1,0 +1,78 @@
+@font-face {
+    font-family: FiraSans;
+    src: url(fonts/FiraSans-Regular.woff);
+}
+
+@font-face {
+    font-family: FiraMono;
+    src: url(fonts/FiraMono-Regular.woff);
+}
+
+/* green */
+/* :root { */
+/*     --main-bg-color: #d8f3dc; */
+/*     --sidebar-bg-color: #52b788; */
+/*     --text-color: #1b4332; */
+/* } */
+
+/* blue grey */
+:root {
+    --main-bg-color: #e9ecef;
+    --sidebar-bg-color: #ced4da;
+    --text-color: #495057;
+    --link-hover-color: #343a40;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    font-family: FiraMono, sans-serif;
+    letter-spacing: -1px;
+    color: var(--text-color);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+}
+
+.sidebar {
+    width: 180px;
+    background-color: var(--sidebar-bg-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+.sidebar a {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--text-color);
+}
+
+.sidebar a:hover {
+    color: var(--link-hover-color);
+}
+
+.content {
+    width: 350px;
+    padding-left: 20px;
+}
+
+.topbar {
+    text-align: right;
+    width: 100%;
+    border-bottom: 5px solid black;
+    border-radius: 2px;
+    padding-top: 10px;
+    border-color: var(--text-color);
+}
+
+.borderclass {
+    display: flex;
+    align-items: baseline;
+    width: auto;
+    flex-wrap: wrap;
+}
