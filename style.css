@@ -24,7 +24,6 @@ body {
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: center;
-    /* align-items: baseline; */
 }
 
 .container{
@@ -32,7 +31,6 @@ body {
     align-items: baseline;
     width: auto;
     flex-wrap: wrap;
-    align-content: stretch;
 }
 
 .sidebar {
@@ -54,9 +52,9 @@ body {
 }
 
 .content {
-    width: 350px;
+    width: 300px;
+    min-height: 400px;
     padding-left: 20px;
-    height: 100%;
 }
 
 .topbar {
@@ -66,6 +64,7 @@ body {
     border-radius: 2px;
     padding-top: 10px;
     border-color: var(--text-color);
+    align-self: flex-start;
 }
 
 .botbar {
@@ -76,4 +75,3 @@ body {
     padding-bottom: 10px;
     border-color: var(--text-color);
 }
-
