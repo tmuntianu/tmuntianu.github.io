@@ -8,13 +8,6 @@
     src: url(fonts/FiraMono-Regular.woff);
 }
 
-/* green */
-/* :root { */
-/*     --main-bg-color: #d8f3dc; */
-/*     --sidebar-bg-color: #52b788; */
-/*     --text-color: #1b4332; */
-/* } */
-
 /* blue grey */
 :root {
     --main-bg-color: #e9ecef;
@@ -28,14 +21,18 @@ body {
     font-family: FiraMono, sans-serif;
     letter-spacing: -1px;
     color: var(--text-color);
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    /* align-items: baseline; */
 }
 
-.container {
+.container{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: baseline;
-    width: 100%;
+    width: auto;
+    flex-wrap: wrap;
+    align-content: stretch;
 }
 
 .sidebar {
@@ -59,6 +56,7 @@ body {
 .content {
     width: 350px;
     padding-left: 20px;
+    height: 100%;
 }
 
 .topbar {
@@ -70,9 +68,12 @@ body {
     border-color: var(--text-color);
 }
 
-.borderclass {
-    display: flex;
-    align-items: baseline;
-    width: auto;
-    flex-wrap: wrap;
+.botbar {
+    text-align: center;
+    width: 100%;
+    border-top: 5px solid black;
+    border-radius: 2px;
+    padding-bottom: 10px;
+    border-color: var(--text-color);
 }
+
