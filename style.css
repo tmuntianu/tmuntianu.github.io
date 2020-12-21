@@ -13,7 +13,8 @@
     --main-bg-color: #e9ecef;
     --sidebar-bg-color: #ced4da;
     --text-color: #495057;
-    --link-hover-color: #343a40;
+    /* --link-hover-color: #343a40; */
+    --link-hover-color: #212529;
 }
 
 body {
